@@ -243,7 +243,7 @@ export default function EmployeeList() {
                   {`${selectedEmployee.firstName} ${selectedEmployee.lastName}`}
                 </h3>
                 <Badge variant='outline' className='mt-1'>
-                  {selectedEmployee.employee.position}
+                  {PositionLabels[selectedEmployee.employee.position as PositionType]}
                 </Badge>
               </div>
 
